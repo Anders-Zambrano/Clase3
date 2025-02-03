@@ -1,25 +1,10 @@
-# Serie sumatoria de n
+def calcular_area_rectangulo(base, altura):
+    area = base * altura
+    return area
 
-def sumatoria(n):
-    suma = 0
-    l=[]
-    for i in range(1,n+1):
-        suma += i
-        l.append(suma)
-    return l
-
-
-#s Serie fibonacci 
-def fibonacci(n):
-    a = 1
-    b = 1
-    l=[]
-    if(n==1):
-        l.append(a)
-    elif(n==2):
-        l.append(b)
-    else:
-        a,b=b,a+b
-        l.append(b)
-    return l
-    
+# Ejemplo
+if __name__ == "__main__":
+    base = 5
+    altura = 3
+    resultado = calcular_area_rectangulo(base, altura)
+    print(f"El área del rectángulo es: {resultado}")
